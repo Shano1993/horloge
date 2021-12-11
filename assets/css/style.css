@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#font {
+    border: 1rem solid black;
+    width: 50rem;
+    height: 50rem;
+    margin: 15rem auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center {
+    height: 50rem;
+
+}
+
+.hour {
+    width: 15rem;
+}
+
+#eleven-seven, #one-five {
+    height: 45rem;
+}
+
+#two-four, #ten-eight {
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    justify-content: flex-start;
+}
+
+#three, #nine {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    width: 10rem;
+}
+
+#eleven-seven, #one-five {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    justify-content: flex-start;
+    height: 48rem;
+    width: 15rem;
+}
+
+#two, #four, #one, #five {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#eleven, #ten, #eight, #seven {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#two, #ten {
+    margin-bottom: 13rem;
+    padding-top: 4rem;
+}
+
+#eleven, #one {
+    margin-bottom: 27rem;
+    padding-top: 2rem;
+}
+
+#twelve {
+    margin-top: 1rem;
+}
+
+#six {
+    margin-bottom: 1rem;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#point {
+    padding-bottom: 3rem;
+    display: flex;
+}
+
+#nine {
+    padding-left: 1rem;
+}
+
+#three {
+    padding-right: 1rem;
+}
+
+
+#second {
+    position: absolute;
+    height: 18rem;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+}
+
+#minute {
+    position: absolute;
+    height: 15rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+}
+
+#hour {
+    position: absolute;
+    height: 9rem;
+    border: 0.3rem solid black;
+    border-radius: 50%;
+}
+
+@keyframes tour {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#second {
+    animation: tour 60s steps(60, end) infinite;
+    transform-origin: 50% 1.5rem;
+}
+
+#minute {
+    animation: tour 3600s steps(60, end) infinite;
+    transform-origin: 50% 1.5rem;
+}
+
+#hour {
+    animation: tour 43200s linear infinite;
+    transform-origin: 50% 1.5rem;
+}
