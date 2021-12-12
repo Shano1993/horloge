@@ -105,6 +105,8 @@ html {
 #point {
     padding-bottom: 3rem;
     display: flex;
+    margin-left: -24rem;
+    margin-top: 3rem;
 }
 
 #nine {
@@ -115,48 +117,35 @@ html {
     padding-right: 1rem;
 }
 
+.hand {
+    height: 0.5rem;
+    background-color: black;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+}
 
 #second {
     position: absolute;
-    height: 18rem;
     border: 0.1rem solid black;
     border-radius: 50%;
+    background-color: red;
+    width: 16rem;
+    margin-left: -3.5rem;
 }
 
 #minute {
     position: absolute;
-    height: 15rem;
     border: 0.2rem solid black;
     border-radius: 50%;
+    width: 14rem;
+    margin-left: -1.5rem;
 }
 
 #hour {
     position: absolute;
-    height: 9rem;
     border: 0.3rem solid black;
     border-radius: 50%;
-}
-
-@keyframes tour {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-#second {
-    animation: tour 60s steps(60, end) infinite;
-    transform-origin: 50% 1.5rem;
-}
-
-#minute {
-    animation: tour 3600s steps(60, end) infinite;
-    transform-origin: 50% 1.5rem;
-}
-
-#hour {
-    animation: tour 43200s linear infinite;
-    transform-origin: 50% 1.5rem;
+    width: 10rem;
+    margin-left: 2.5rem;
 }
