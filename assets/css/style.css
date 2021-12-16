@@ -156,3 +156,7 @@ h1 {
     width: 10rem;
     margin-left: 2.5rem;
 }
+
+#fontColor {
+    margin: 0 auto;
+}

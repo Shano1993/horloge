@@ -19,4 +19,14 @@ function clock() {
     }, 1000);
 }
 
+function color() {
+    let color = document.getElementById('color');
+    let font = document.getElementById('font');
+    font.style.backgroundColor = color.value;
+}
+
+document.getElementById('ok').addEventListener("click", function () {
+    color();
+})
+
 clock();
